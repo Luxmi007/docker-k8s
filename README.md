@@ -1,2 +1,2 @@
-# docker
-repository to learn docker
+# docker & K8s
+repository to learn docker and kubernates
