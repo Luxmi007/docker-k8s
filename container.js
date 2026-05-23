@@ -10,4 +10,8 @@ a container registry and shared with others, making it easy to deploy applicatio
 
 CONTAINER IMAGE IS THE RUNNING INSTANCE OF THE APPLICATION.
 
+
+MYSQL IMAGE: docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+
+
 */
