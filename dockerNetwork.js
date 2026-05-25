@@ -43,4 +43,34 @@ complex applications in a containerized environment.
 4. Distributed Systems: Docker networks are crucial for distributed systems, where containers running on different hosts need to communicate with each other. 
     Docker networks can be used to create overlay networks that span across multiple hosts, enabling seamless communication between distributed applications.       
 
+// ++++++++++++++++++++++ DOCKER NETWORK COMMANDS +++++++++++++++++++++
+
+1. docker network create: This command is used to create a new Docker network. You can specify the network type (bridge, host, overlay) and other options such as subnet and gateway.
+
+2. docker network connect: This command is used to connect a container to a Docker network. You can specify the container name or ID and the network name.
+
+3. docker network disconnect: This command is used to disconnect a container from a Docker network. You can specify the container name or ID and the network name.
+
+4. docker network inspect: This command is used to inspect a Docker network and view its configuration and connected containers. You can specify the network name or ID.
+
+5. docker network ls: This command is used to list all Docker networks on the host machine, along with their names, IDs, and driver types.
+
+6. docker network rm: This command is used to remove a Docker network. You can specify the network name or ID.
+
+7. docker network -f drive=bridge : This command is used to filter Docker networks based on their driver type. In this case, it will list all networks that use the bridge driver.  
+
+8. docker network ls --format "{{.ID}}: {{DRIVER}}: to find all n/w id and their driver type.
+
+
+// DOCKER DNS: 
+1. DNS stands for Domain Name System, which is a system that translates human-readable domain names into IP addresses.
+2. DNS is how domain names are translated into IP addresses.
+3. DNS allows us to use our web browsers to access websites using domain names instead of IP addresses.
+4. Docker provides a built-in DNS server that allows containers to resolve the names of other containers on the same network. 
+   This means that containers can communicate with each other using their container names instead of IP addresses, making it easier to manage 
+   and connect containers in a Docker network.   
+
+5. Containers uses DNS to communicate.
+
+
 */
